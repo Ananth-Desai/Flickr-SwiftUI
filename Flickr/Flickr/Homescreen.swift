@@ -13,20 +13,21 @@ struct HomeScreen: View {
     init() {
         let appearance = UINavigationBarAppearance()
         appearance.titleTextAttributes = [
-            .foregroundColor : UIColor(named: "Pink Primary") as Any,
-            .font : UIFont(name: "Pacifico-Regular", size: 20) as Any
+            .foregroundColor : UIColor(named: GlobalConstants.shared.pinkPrimary) as Any,
+            .font : UIFont(name: GlobalConstants.shared.navbarFont, size: 20) as Any
         ]
-        appearance.backgroundColor = UIColor(named: "Navbar Background")
+        appearance.backgroundColor = UIColor(named: GlobalConstants.shared.navbarbackground)
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
         let tabAppearance = UITabBarAppearance()
         let itemAppearance = UITabBarItemAppearance()
-        itemAppearance.selected.iconColor = UIColor(named: "Pink Primary")
+        itemAppearance.selected.iconColor = UIColor(named: GlobalConstants.shared.pinkPrimary)
         itemAppearance.selected.titleTextAttributes = [
-            .foregroundColor : UIColor(named: "Pink Primary") as Any
+            .foregroundColor : UIColor(named: GlobalConstants.shared.pinkPrimary) as Any
         ]
-        tabAppearance.backgroundColor = UIColor(named: "Tab Bar Background")
-        tabAppearance.selectionIndicatorTintColor = UIColor(named: "Pink Primary")
+        tabAppearance.backgroundColor = UIColor(named: GlobalConstants.shared.tabbarBackground)
+        tabAppearance.selectionIndicatorTintColor = UIColor(named: GlobalConstants.shared.pinkPrimary)
         tabAppearance.stackedLayoutAppearance = itemAppearance
         tabAppearance.compactInlineLayoutAppearance = itemAppearance
         tabAppearance.inlineLayoutAppearance = itemAppearance
@@ -40,19 +41,19 @@ struct HomeScreen: View {
                 TabView {
                     SearchScreen()
                         .tabItem {
-                            Image("Search Icon")
-                            Text("Search")
+                            Image(GlobalConstants.shared.searchIcon)
+                            Text(GlobalConstants.shared.tabBarSearch)
                         }
                         .tag(1)
                     FavoritesScreen()
                         .tabItem {
-                            Image("Heart Icon")
-                            Text("Favorites")
+                            Image(GlobalConstants.shared.heartIcon)
+                            Text(GlobalConstants.shared.tabBarFavorites)
                         }
                         .tag(2)
                 }
             }
-            .navigationTitle("Flickr")
+            .navigationTitle(GlobalConstants.shared.navbarTitle)
             .navigationBarTitleDisplayMode(.inline)
         }
         .navigationViewStyle(StackNavigationViewStyle())

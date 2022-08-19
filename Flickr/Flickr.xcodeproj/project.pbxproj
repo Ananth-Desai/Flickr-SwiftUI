@@ -24,6 +24,9 @@
 		CA072A9828AF52BE00D65904 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A9728AF52BE00D65904 /* FavoritesScreen.swift */; };
 		CA072A9928AF52BE00D65904 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A9728AF52BE00D65904 /* FavoritesScreen.swift */; };
 		CA072A9A28AF52BE00D65904 /* FavoritesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A9728AF52BE00D65904 /* FavoritesScreen.swift */; };
+		CA072A9C28AFCC4600D65904 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A9B28AFCC4500D65904 /* GlobalConstants.swift */; };
+		CA072A9D28AFCC4600D65904 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A9B28AFCC4500D65904 /* GlobalConstants.swift */; };
+		CA072A9E28AFCC4600D65904 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA072A9B28AFCC4500D65904 /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 		CA072A8E28AF4E5600D65904 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CA072A9328AF522900D65904 /* SearchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreen.swift; sourceTree = "<group>"; };
 		CA072A9728AF52BE00D65904 /* FavoritesScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesScreen.swift; sourceTree = "<group>"; };
+		CA072A9B28AFCC4500D65904 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,7 @@
 				CA072A8328AE8DBA00D65904 /* Homescreen.swift */,
 				CA072A9328AF522900D65904 /* SearchScreen.swift */,
 				CA072A9728AF52BE00D65904 /* FavoritesScreen.swift */,
+				CA072A9B28AFCC4500D65904 /* GlobalConstants.swift */,
 			);
 			path = Flickr;
 			sourceTree = "<group>";
@@ -292,6 +297,7 @@
 				CA072A8428AE8DBA00D65904 /* Homescreen.swift in Sources */,
 				CA072A9828AF52BE00D65904 /* FavoritesScreen.swift in Sources */,
 				CA072A5728A38B8600D65904 /* FlickrApp.swift in Sources */,
+				CA072A9C28AFCC4600D65904 /* GlobalConstants.swift in Sources */,
 				CA072A9428AF522900D65904 /* SearchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +308,7 @@
 			files = (
 				CA072A6828A38B8700D65904 /* FlickrTests.swift in Sources */,
 				CA072A9928AF52BE00D65904 /* FavoritesScreen.swift in Sources */,
+				CA072A9D28AFCC4600D65904 /* GlobalConstants.swift in Sources */,
 				CA072A9528AF522900D65904 /* SearchScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +319,7 @@
 			files = (
 				CA072A7228A38B8700D65904 /* FlickrUITests.swift in Sources */,
 				CA072A7428A38B8700D65904 /* FlickrUITestsLaunchTests.swift in Sources */,
+				CA072A9E28AFCC4600D65904 /* GlobalConstants.swift in Sources */,
 				CA072A9628AF522900D65904 /* SearchScreen.swift in Sources */,
 				CA072A9A28AF52BE00D65904 /* FavoritesScreen.swift in Sources */,
 			);
